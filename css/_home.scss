@@ -1,0 +1,142 @@
+#home {
+  background-color: $black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  animation: colorChange 5s;
+  // animation-delay: 5s;
+  animation-iteration-count: 1;
+
+  // background-image: url(../assets/background2.jpg);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  .top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 35vh;
+
+    svg {
+      width: 30rem;
+      height: 7rem;
+      text {
+        stroke: $primary;
+        stroke-width: 1;
+        font-size: 4vw;
+        animation: textAnimate 5s infinite alternate;
+      }
+    }
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    svg {
+      width: 70rem;
+      height: 10rem;
+      text {
+        stroke: $primary;
+        stroke-width: 1;
+        font-size: 5vw;
+        animation: textAnimate 5s infinite alternate;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    svg {
+      width: 70rem;
+      height: 7rem;
+
+      text {
+        stroke: $primary;
+        stroke-width: 1;
+        font-size: 5vw;
+        animation: textAnimate 5s infinite alternate;
+      }
+    }
+  }
+
+  svg text {
+    stroke: $primary;
+    stroke-width: 1;
+    animation: textAnimate 5s infinite alternate;
+  }
+}
+
+@media (max-width: 600px) {
+  .top svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 8vw !important;
+    }
+  }
+  .center svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 8vw !important;
+    }
+  }
+  .bottom svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 8vw !important;
+    }
+  }
+}
+@media (max-width: 470px) {
+  .top svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 12vw !important;
+    }
+  }
+  .center svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 12vw !important;
+    }
+  }
+  .bottom svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 12vw !important;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .top svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 15vw !important;
+    }
+  }
+  .center svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 15vw !important;
+    }
+  }
+  .bottom svg {
+    height: 20vw !important;
+    width: 100vw !important;
+    text {
+      font-size: 15vw !important;
+    }
+  }
+}

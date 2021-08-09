@@ -1,0 +1,18 @@
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0% 50%;
+    stroke-dashoffset: 20%;
+  }
+  100% {
+    stroke-dasharray: 50% 0%;
+    stroke-dashoffset: -20%;
+  }
+}
+@keyframes colorChange {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}

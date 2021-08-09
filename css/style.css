@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@-webkit-keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0% 50%;
+    stroke-dashoffset: 20%;
+  }
+  100% {
+    stroke-dasharray: 50% 0%;
+    stroke-dashoffset: -20%;
+  }
+}
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0% 50%;
+    stroke-dashoffset: 20%;
+  }
+  100% {
+    stroke-dasharray: 50% 0%;
+    stroke-dashoffset: -20%;
+  }
+}
+
+@-webkit-keyframes colorChange {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+#contact {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40vh;
+}
+
+.contact-main a {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contact-main a :hover {
+  border: 0.2rem double white;
+  border-radius: 2000rem;
+  background-color: #333333;
+}
+
+.contact-main a svg {
+  width: 20rem;
+  height: 7rem;
+}
+
+.contact-main a svg text {
+  stroke: white;
+  stroke-width: 1;
+  font-size: 4vw;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+}
+
+.thank-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.thank-you svg {
+  width: 18rem;
+  height: 5rem;
+}
+
+.thank-you svg text {
+  stroke: black;
+  stroke-width: 2;
+  font-size: 3vw;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+}
+
+@media (max-width: 880px) {
+  .contact-main {
+    margin-top: 30vh;
+  }
+  .thank-you svg text {
+    font-size: 5vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-main svg {
+    height: 15vw;
+  }
+  .contact-main svg text {
+    font-size: 15vw !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .thank-you {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#home {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: colorChange 5s;
+          animation: colorChange 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+#home .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35vh;
+}
+
+#home .top svg {
+  width: 30rem;
+  height: 7rem;
+}
+
+#home .top svg text {
+  stroke: white;
+  stroke-width: 1;
+  font-size: 4vw;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+}
+
+#home .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#home .center svg {
+  width: 70rem;
+  height: 10rem;
+}
+
+#home .center svg text {
+  stroke: white;
+  stroke-width: 1;
+  font-size: 5vw;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+}
+
+#home .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#home .bottom svg {
+  width: 70rem;
+  height: 7rem;
+}
+
+#home .bottom svg text {
+  stroke: white;
+  stroke-width: 1;
+  font-size: 5vw;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+}
+
+#home svg text {
+  stroke: white;
+  stroke-width: 1;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+}
+
+@media (max-width: 600px) {
+  .top svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .top svg text {
+    font-size: 8vw !important;
+  }
+  .center svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .center svg text {
+    font-size: 8vw !important;
+  }
+  .bottom svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .bottom svg text {
+    font-size: 8vw !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .top svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .top svg text {
+    font-size: 12vw !important;
+  }
+  .center svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .center svg text {
+    font-size: 12vw !important;
+  }
+  .bottom svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .bottom svg text {
+    font-size: 12vw !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .top svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .top svg text {
+    font-size: 15vw !important;
+  }
+  .center svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .center svg text {
+    font-size: 15vw !important;
+  }
+  .bottom svg {
+    height: 20vw !important;
+    width: 100vw !important;
+  }
+  .bottom svg text {
+    font-size: 15vw !important;
+  }
+}
+
+#skills {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+#work {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em 4em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-bottom: 0.2rem double white;
+}
+
+.nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40vw;
+  margin-right: 10vw;
+}
+
+.nav .nav-links li a svg {
+  height: 4rem;
+  width: 9rem;
+  font-size: 4rem;
+}
+
+.nav .nav-links li a svg :hover {
+  font-size: 6rem;
+}
+
+.nav .nav-links li a svg text {
+  stroke: white;
+  stroke-width: 2;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.nav .logo svg {
+  height: 7rem;
+  width: 12rem;
+  font-size: 6rem;
+}
+
+.nav .logo svg text {
+  stroke: white;
+  stroke-width: 3;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.toggle-btn {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  margin-right: -70vw;
+}
+
+.toggle-btn svg {
+  height: 7rem;
+  width: 10rem;
+  font-size: 7rem;
+}
+
+.toggle-btn svg text {
+  stroke: white;
+  stroke-width: 3;
+  -webkit-animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
+}
+
+@media (max-width: 880px) {
+  .toggle-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+  }
+  .nav .nav-links {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 370px) {
+  .logo {
+    margin-left: -10vw;
+  }
+}
+
+@media (max-width: 330px) {
+  .logo {
+    margin-left: -20vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo {
+    margin-left: -25vw;
+  }
+  .toggle-btn {
+    margin-left: -8vw;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400vw;
+}
+
+@media (max-width: 880px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+  }
+}
+
+.active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/*# sourceMappingURL=style.css.map */
