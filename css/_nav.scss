@@ -44,7 +44,7 @@
   .logo svg text {
     stroke: $primary;
     stroke-width: 3;
-    animation: textAnimate 5s infinite alternate;
+    animation: textAnimate 5s alternate;
     transition: all 0.3s linear;
   }
 }

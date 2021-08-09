@@ -405,8 +405,8 @@
 .nav .logo svg text {
   stroke: white;
   stroke-width: 3;
-  -webkit-animation: textAnimate 5s infinite alternate;
-          animation: textAnimate 5s infinite alternate;
+  -webkit-animation: textAnimate 5s alternate;
+          animation: textAnimate 5s alternate;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
